@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #55557e;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.box {
+  max-width: 450px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background-color: #252525;
+  border-left: 1px solid #afafc4;
+  border-right: 1px solid #afafc4;
+  opacity: 0.6;
+}
+
+.item:first-child {
+  border-left: none;
+}
+
+.item:last-child {
+  border-right: none;
+}
+
+.item.active {
+  width: 85px;
+  height: 85px;
+  opacity: 1;
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.8);
+}
+
+.inner {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.head {
+  height: 150px;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./../img/food.jpg);
+  /* background-image: ; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  padding: 15px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 28px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.inner-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.inner-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #afafc4;
+  padding: 15px;
+  border-bottom: 1px solid #afafc4;
+}
+
+.inner-item:last-child {
+  border-bottom: none;
+}
